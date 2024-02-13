@@ -21,15 +21,13 @@ let wallet = 12800;
 let price = 980;
 
 // iは買い物回数
-// for (let i = 1; i < 20; i++) {
-//   if (wallet >= price) {
-//     if (i >= 5) {
-//       price = 750;
-//     }
-//     wallet = wallet - price;
-//     console.log(`${i}回目の買い物成功。残金は${wallet}円`);
-//   } else {
-//     console.log(`買い物終了${i}個買えた`);
-//     break;
-//   }
-// }
+let i = 1;
+while (wallet >= price) {
+  if (i >= 5) {
+    price = 750;
+  }
+  wallet -= price;
+  console.log(`${i}回目の買い物成功。残金は${wallet}円`);
+  i++;
+}
+console.log(`買い物終了${i}個買えた`);
