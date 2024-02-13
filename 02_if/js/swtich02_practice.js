@@ -1,6 +1,6 @@
 const num1 = 8;
 const num2 = 2;
-const calc = "a";
+const calc = "q";
 let ans = 0;
 
 switch (calc) {
