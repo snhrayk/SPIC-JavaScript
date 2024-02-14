@@ -30,4 +30,4 @@ while (wallet >= price) {
   console.log(`${i}回目の買い物成功。残金は${wallet}円`);
   i++;
 }
-console.log(`買い物終了${i}個買えた`);
+console.log(`買い物終了${i - 1}個買えた`);
