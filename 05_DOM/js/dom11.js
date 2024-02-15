@@ -1,7 +1,6 @@
-const btn = document.querySelectorAll(".changeBtn");
-const bg = document.querySelector("#bg");
+const btn = document.getElementsByClassName("changeBtn");
+const bg = document.getElementById("bg");
 
-btn.addEventlistener("click", () => {
-  console.log("click");
-  //   bg.style.backgroundColor = btn.style;
-});
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", () => {});
+}

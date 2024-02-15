@@ -7,21 +7,21 @@ const no = Math.floor(Math.random() * 6);
 
 switch (no) {
   case 0:
-    console.log("大吉ですおめでとう！");
+    console.log(`${omikuji[0]}ですおめでとう！`);
     break;
   case 1:
-    console.log("中吉ですラッキー！");
+    console.log(`${omikuji[1]}ですラッキー！`);
     break;
   case 2:
-    console.log("コメントに困る吉です");
+    console.log(`コメントに困る${omikuji[2]}です`);
     break;
   case 3:
-    console.log("小吉です");
+    console.log(`${omikuji[3]}です`);
     break;
   case 4:
-    console.log("凶ですアンラッキー");
+    console.log(`${omikuji[4]}ですアンラッキー`);
     break;
   default:
-    console.log("大凶です残念・・・");
+    console.log(`${omikuji[5]}です残念・・・`);
     break;
 }

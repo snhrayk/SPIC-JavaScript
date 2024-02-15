@@ -5,4 +5,9 @@ const menu = [
   "ステーキ定食",
   "カツカレー定食",
 ];
+const menuList = document.querySelector("#menu");
 
+menu.forEach((e) => {
+  console.log(e);
+  menuList.innerHTML += `<li>${e}</li>`;
+});
