@@ -1,6 +1,6 @@
-const btnA = document.getElementById("btnA");
-const btnB = document.getElementById("btnB");
-const btnC = document.getElementById("btnC");
+// const btnA = document.getElementById("btnA");
+// const btnB = document.getElementById("btnB");
+// const btnC = document.getElementById("btnC");
 // const btn = [btnA, btnB, btnC];
 const btn = document.getElementsByClassName("btn");
 console.log(btn);

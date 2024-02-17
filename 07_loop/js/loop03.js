@@ -12,11 +12,22 @@ let cities = [
 ];
 const result = document.querySelector("#result");
 
-function topCities(a, b) {
-  return b - a;
-}
+// citiesのpopulationを取ってくる
+// const topC = cities.map((c) => {
+//   console.log(c);
+//   return c;
+// });
+
+// citiesのpopulationを降順に並べる
+// cities.sort((a, b) => b.population - a.population);
+// console.log(cities);
 
 const topC = cities.map((c) => {
   console.log(c);
-  // return c.population;
+  return c;
 });
+
+// citiesのnameをresultに<li></li>として表示
+for (let i = 0; i < topC.length; i++) {
+  result.innerHTML += `<li>${topC[i].name}</li>`;
+}
