@@ -12,4 +12,4 @@ function setTimer() {
   }
 }
 
-setTimer();
+setTimeout(setTimer, 1000);
