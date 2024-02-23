@@ -6,10 +6,9 @@ const duration = 1000;
 
 function setTimer() {
   count++;
-  if (count < 15) {
-    counter.innerText = count;
-    setTimeout(setTimer, duration);
-  }
+  counter.innerText = count;
+  setTimeout(setTimer, duration);
 }
 
+// 1秒後にsetTimerを開始
 setTimeout(setTimer, 1000);
