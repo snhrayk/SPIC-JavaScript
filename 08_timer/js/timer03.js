@@ -5,24 +5,19 @@
 // 用意された配列のデータ
 const arr = ["HTML", "CSS", "JavaScript", "Pug", "Sass", "TypeScript"];
 // 表示させる場所
-const skill = document.querySelector("#skill");
+const skill = document.getElementById("skill");
 let count = 0;
 
-// 繰り返す
-// 配列の中から1つ取って来る
-// for (let i = 0; i < arr.length; i++) {
-// 一文字ずつバラバラの配列にいれる
-const arrSplit = arr[0].split("");
-console.log(arrSplit);
-// 一文字ずつ３秒かけて表示
-// setInterval(() => {
-//   if (count < arrSplit.length) {
-//     // console.log(arrSplit);
-//     skill.innerHTML += `<li>${arrSplit}</li>`;
-//     count++;
-//   }
-//   // else {
-//   //   return false;
-//   // }
-// }, 3000);
-// }
+function addSkill() {
+  const arrItems = document.createElement("li");
+  arrItems.textContent = arr[count];
+  skill.appendChild(arrItems);
+  count++;
+  if (count >= arr.length) {
+    clearInterval(timer);
+  }
+}
+
+for (let i = 0; i < arr.length; i++) {
+  setTimeout(addSkill, i * 3000);
+}
